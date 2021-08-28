@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block scripts %}
+<script>
+
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- <div class="card mt-2"> -->
+
+    {%with messages = get_flashed_messages()%}
+    {%if messages %}
+      <script type="text/javascript">
+        alert("{{messages[-1]}}");
+      </script>
+      {%endif%}
+    {%endwith%}
+
+   {%for book in book_list%}
+   
+   <!-- <div class="card-body"> -->
+
+    <div style="border: 1px solid #524fa1; float: left; width: 33%; padding:15px;">
+        <!-- <div class="mb-3"> -->
+            <img class="form-label" src="../static/img/{{book.book_id}}.jpg" width="100" height="100" >
+            <div>
+            <a href="/bookIDetail?name={{book.book_id}}"><label class="form-label">{{book.book_name}}</label></a>
+            </div>
+            <!-- <div id='edit-area'> -->
+                <p id='userContent{{book.id}}'>{{book.author}}</p>
+            <!-- </div> -->
+            <!-- <div id='edit-area'> -->
+                <p id='userContent{{book.id}}'> {{book.publisher}}</p>
+            <!-- </div> -->
+            <!-- <div id='edit-area'> -->
+                <p id='userContent{{book.id}}'>남은권수 {{book.remaining}}</p>
+            <!-- </div> -->
+        <!-- </div> -->
+        {% for i in range(book.rating)%}
+        <img  src="../static/img/star_icon.png" width="10" height="10">
+
+       {% endfor%}<br>
+        <a href = "/borrowBook?data={{book.book_id}}"><button   style = "background-color:#524fa1">대여하기 </button></a>
+    </div>
+
+   {% endfor %}
+
+<!-- </div> -->
+
+{% endblock %}

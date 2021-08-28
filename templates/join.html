@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block scripts %}
+<script>
+   
+</script>
+{% endblock %}
+
+{% block content %}
+<h2 class="title">Elice 도서관 회원가입</h2>
+<hr>
+<form method = "post" action="/join">
+    {%with messages = get_flashed_messages()%}
+    {%if messages %}
+      <script type="text/javascript">
+        alert("{{messages[-1]}}");
+      </script>
+      {%endif%}
+    {%endwith%}
+<div class="card">
+    <div class="card-body">
+        <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">ID</label>
+            <div class="col-sm-10">
+                <input type="text" name='email' class="form-control" placeholder="elice@elice.kr">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" name='name' class="form-control" placeholder="elice">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" name="pw1">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Password Check</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" name="pw2">
+            </div>
+        </div>
+        <button type ="submit" class="btn btn-primary">회원가입하기</button>
+    </div>
+</div>
+</form>
+<hr>
+
+{% endblock %}

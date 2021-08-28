@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Elice Library</title>
+    <!-- 지워도 됨 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 지워도 됨 -->
+
+    <script src="{{ url_for('static', filename='bootstrap.bundle.min.js') }}" > </script>
+    <script src="{{ url_for('static', filename='jquery.js') }}" > </script>
+    <link href="{{url_for('static',filename='bootstrap.min.css')}}" rel="stylesheet">
+    <style>
+        .wrap {
+            width: 1500px;
+            margin: 10px auto;
+        }
+
+        .title {
+            text-align: center;
+        }
+    </style>
+    {% block scripts %}
+    {% endblock %}
+</head>
+
+<body>
+    <div class="wrap">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <div class="container-fluid" style = "background-color: #524fa1">
+                <a class="navbar-brand" href="/">Elice 도서관</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <!-- 로그인한 사람과 하지 않은 사람을 구분하여 내비게이션 바를 보여주세요. -->
+                        {% if not session['login'] %}
+                        <a class="nav-link" href="/logout">대여기록</a>
+                        <a class="nav-link" href="/logout">반납하기</a>
+                        <!-- <a class="nav-link" href="/login">로그인</a> -->
+                        <a class="nav-link" href="/join">회원가입</a>
+                        {% else %}
+                        <a class="nav-link" href="/borrowBookList">대여기록</a>
+                        <a class="nav-link" href="/returnBookList">반납하기</a>
+                        <a class="nav-link" href="/logout">로그아웃</a>
+                        {% endif %}
+                        
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+</html>
