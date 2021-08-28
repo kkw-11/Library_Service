@@ -11,7 +11,7 @@
 - [레이서 도서관 책 목록 보기](https://docs.google.com/spreadsheets/d/1Cd6psNhQUEc50-P7Z3HZoj4AEboTli3XhhniCa937Do/edit?usp=sharing)
 - [레이서 도서관 책 이미지 목록](https://drive.google.com/drive/folders/1VgJD56KiIygWioZ0AaIX1c0pr8uDh7fV?usp=sharing)
 
-- Domain: kdt-1st-project-34.koreacentral.cloudapp.azure.com
+- Domain: http://kdt-1st-project-34.koreacentral.cloudapp.azure.com
 ### 프로젝트 개발기간
 
 * 2021.08.16 ~ 2021.08.27
