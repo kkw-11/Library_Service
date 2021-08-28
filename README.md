@@ -6,7 +6,7 @@
 
 도서관 대출 서비스는 레이서 도서관에 있는 책을 온라인으로 관리할 수 있는 웹 서비스입니다.
 
-책의 상세 정보를 확인할 수 있는 페이지와 대여/반납 기능을 통해 도서 관리를 할 수 있는 웹 서비스를 제작하게 됩니다.
+책의 상세 정보를 확인할 수 있는 페이지와 대여/반납 기능을 통해 도서 관리를 할 수 있는 웹 서비스를 제작하였습니다.
 
 - [레이서 도서관 책 목록 보기](https://docs.google.com/spreadsheets/d/1Cd6psNhQUEc50-P7Z3HZoj4AEboTli3XhhniCa937Do/edit?usp=sharing)
 - [레이서 도서관 책 이미지 목록](https://drive.google.com/drive/folders/1VgJD56KiIygWioZ0AaIX1c0pr8uDh7fV?usp=sharing)
