@@ -10,7 +10,6 @@ print("dbconnection!!")
 
 
 
-
 # sql = '''
 #     INSERT INTO BOOK(book_name, publisher, author, publication_date, pages, isbn, description, link)
 #     VALUES ("주니어를 위한 최선의 코딩 학습 똑똑한 파이썬",	"코딩스쿨(인포앤북)", "황재호/황예린", "2019-07-01", "240", "9791196440916",
