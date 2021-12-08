@@ -66,7 +66,7 @@ https://whimsical.com/4uSB4tHy4ZjhBr8zuVVHoi
   **`선택`** 
 
   -  [x] 비밀번호는 다음의 [링크1](https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/(%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%9C%84%EC%9B%90%ED%9A%8C)%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%9D%98%EA%B8%B0%EC%88%A0%EC%A0%81%C2%B7%EA%B4%80%EB%A6%AC%EC%A0%81%EB%B3%B4%ED%98%B8%EC%A1%B0%EC%B9%98%EA%B8%B0%EC%A4%80/(2020-5,20200811)), [링크2](https://www.kisa.or.kr/public/laws/laws3_View.jsp?cPage=7&mode=view&p_No=259&b_No=259&d_No=102&ST=T&SV=)에 맞추어 최소 8자리 이상의 길이로 입력 받아야 합니다.
-  - [ ] 아이디는 이메일 형식으로만 입력 받아야 합니다.
+  - [x] 아이디는 이메일 형식으로만 입력 받아야 합니다.
 
 - **회원가입**
 
