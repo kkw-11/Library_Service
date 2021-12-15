@@ -3,14 +3,14 @@
 
 ---
 
-도서관 대출 서비스는 레이서 도서관에 있는 책을 온라인으로 관리할 수 있는 웹 서비스입니다.
+도서관 대출 서비스는  도서관에 있는 책을 온라인으로 관리할 수 있는 웹 서비스입니다.
 
 책의 상세 정보를 확인할 수 있는 페이지와 대여/반납 기능을 통해 도서 관리를 할 수 있는 웹 서비스를 제작하였습니다.
 
 - [레이서 도서관 책 목록 보기](https://docs.google.com/spreadsheets/d/1Cd6psNhQUEc50-P7Z3HZoj4AEboTli3XhhniCa937Do/edit?usp=sharing)
 - [레이서 도서관 책 이미지 목록](https://drive.google.com/drive/folders/1VgJD56KiIygWioZ0AaIX1c0pr8uDh7fV?usp=sharing)
 
-- Domain: http://kdt-1st-project-34.koreacentral.cloudapp.azure.com
+<!-- - Domain: http://kdt-1st-project-34.koreacentral.cloudapp.azure.com -->
 ### 프로젝트 개발기간
 
 * 2021.08.16 ~ 2021.08.27
@@ -49,10 +49,10 @@ https://whimsical.com/4uSB4tHy4ZjhBr8zuVVHoi
 ### 구현할 기능
 
 ---
-
+<!-- 
 `**필수**` 기능은 반드시 구현해야 하는 기능입니다.
 
-**`선택`** 기능은 선택하여 구현하는 기능으로 필수가 아니며, 여기서 제시된 방식이 아닌 다른 방식으로 구현해도 괜찮습니다.
+**`선택`** 기능은 선택하여 구현하는 기능으로 필수가 아니며, 여기서 제시된 방식이 아닌 다른 방식으로 구현해도 괜찮습니다. -->
 
 - **로그인**
 
@@ -64,8 +64,8 @@ https://whimsical.com/4uSB4tHy4ZjhBr8zuVVHoi
 
   **`선택`** 
 
-  - 비밀번호는 다음의 [링크1](https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/(%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%9C%84%EC%9B%90%ED%9A%8C)%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%9D%98%EA%B8%B0%EC%88%A0%EC%A0%81%C2%B7%EA%B4%80%EB%A6%AC%EC%A0%81%EB%B3%B4%ED%98%B8%EC%A1%B0%EC%B9%98%EA%B8%B0%EC%A4%80/(2020-5,20200811)), [링크2](https://www.kisa.or.kr/public/laws/laws3_View.jsp?cPage=7&mode=view&p_No=259&b_No=259&d_No=102&ST=T&SV=)에 맞추어 최소 8자리 이상의 길이로 입력 받아야 합니다.
-  - 아이디는 이메일 형식으로만 입력 받아야 합니다.
+  -  [x] 비밀번호는 다음의 [링크1](https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/(%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EC%9C%84%EC%9B%90%ED%9A%8C)%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%9D%98%EA%B8%B0%EC%88%A0%EC%A0%81%C2%B7%EA%B4%80%EB%A6%AC%EC%A0%81%EB%B3%B4%ED%98%B8%EC%A1%B0%EC%B9%98%EA%B8%B0%EC%A4%80/(2020-5,20200811)), [링크2](https://www.kisa.or.kr/public/laws/laws3_View.jsp?cPage=7&mode=view&p_No=259&b_No=259&d_No=102&ST=T&SV=)에 맞추어 최소 8자리 이상의 길이로 입력 받아야 합니다.
+  - [x] 아이디는 이메일 형식으로만 입력 받아야 합니다.
 
 - **회원가입**
 
@@ -94,7 +94,7 @@ https://whimsical.com/4uSB4tHy4ZjhBr8zuVVHoi
   - [x] 현재 DB 상에 존재하는 모든 책 정보를 가져옵니다.
   - [x] 현재 DB 상에 존재하는 남은 책의 수를 표기합니다.
   - [x] 책 이름을 클릭 시 책 소개 페이지로 이동합니다.
-  - [ ] 책의 평점은 현재 DB 상에 담겨있는 모든 평점의 평균입니다. 숫자 한자리수로 반올림하여 표기합니다.
+  - [x] 책의 평점은 현재 DB 상에 담겨있는 모든 평점의 평균입니다. 숫자 한자리수로 반올림하여 표기합니다.
 
   **`선택`** 
 
@@ -130,7 +130,7 @@ https://whimsical.com/4uSB4tHy4ZjhBr8zuVVHoi
   **`선택`** 
 
   - [ ] 가장 최신의 댓글이 보이도록 정렬하여 보여줍니다.
-  - [ ] 댓글을 작성함으로써 책에 대한 평가 점수를 기입합니다.
+  - [x] 댓글을 작성함으로써 책에 대한 평가 점수를 기입합니다.
   - [ ] 댓글 내용과 평가 점수는 모두 필수 입력 사항입니다.
 
 - **대여기록**
@@ -143,9 +143,9 @@ https://whimsical.com/4uSB4tHy4ZjhBr8zuVVHoi
 ### 배운 점
 * 일정관리의 중요성에 대해 배웠음. 2주의 프로젝트를 너무 완벽하게 하려고 첫 주에는 거의 계획으로만 시간을 보내 남은 일주일 동안 빠듯하게 프로젝트를 소화
 * 개인 프로젝트로 진행하다보니 모든 영역을 직접 관리해야하고 극복해야하는 과정이 어려웠습니다. 하지만 이러한 과정이 실무에가서 다른 포지션을 이해하는 과정이 되었습니다. 그리고 새로운 문제를 만났을 때 당황하지 않고 해결하는 끈기를 기를 수 있었습니다.
-* 백엔드 API 설계부터 DB 구축, 프론트엔드 UI개발까지 모든 영역을 담당하면서 웹서비스 개발의 전체적인 프로세스를 이해
+* 백엔드 API 설계부터 DB 구축, 프론트엔드 UI개발까지 모든 영역을 담당하면서 웹 서비스 개발의 전체적인 프로세스를 이해
 * Flask 파이썬 웹 프레임워크를 통해 백엔드 API를 설계하는 방법 학습
-* 파이썬 객체를 통해 DBMS를 다루는 SQLAlchemy를 다루는 방법을 학습
+* 파이썬 객체를 통해 DBMS를 다루는 SQLAlchemy ORM 다루는 방법을 학습
 * 깃을 통한 프로젝트를 하며 branch를 통한 기능추가를 직접해보며 git의 중요성을 다시 한번 체감
 
 
