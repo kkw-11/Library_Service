@@ -85,13 +85,13 @@ def logout():
 
 @bp.route("/mainBookList")
 def mainBookList():
-    data = Book.query.order_by(Book.book_id).all()
+    book_info = Book.query.order_by(Book.book_id).all()
     sum_rating = 0
-    for book in data:
+    for book in book_info:
         sum_rating += book.rating
         
     print(sum_rating)
-    return render_template("mainBookList.html", book_list = data,avg_rating=sum_rating//len(data) )
+    return render_template("mainBookList.html", book_list = book_info,avg_rating=sum_rating//len(book_info) )
 
 @bp.route("/borrowBook")
 def borrow():
