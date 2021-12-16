@@ -118,8 +118,8 @@ def returnBookList():
     if login_email is None:
             return redirect("/login")
     else:
-        data = BorrowBook.query.filter((BorrowBook.email == login_email) & BorrowBook.return_date ==None).all()
-        return render_template("returnBook.html", book_list = data)
+        borrow_book_list = BorrowBook.query.filter((BorrowBook.email == login_email) & BorrowBook.return_date ==None).all()
+        return render_template("returnBook.html", book_list = borrow_book_list)
 
 @bp.route("/returnBook")
 def returnBook():
