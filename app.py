@@ -1,11 +1,13 @@
 from flask import Flask
 from controller.api import bp
 from mysql_script.db_connect import db
+from config import SQLALCHEMY_DATABASE_URI
+
 
 app = Flask(__name__)
 app.register_blueprint(bp)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:1234@localhost:3306/eliceproject"
+app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 app.secret_key = 'asodfajsdofijac'
 
