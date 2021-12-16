@@ -1,6 +1,6 @@
 from flask import redirect, request, render_template, jsonify, Blueprint, session, g, flash,url_for
-from ..model.models import BorrowBook, User, Book,BookComment
-from ..mysql_script.db_connect import db
+from model.models import BorrowBook, User, Book,BookComment
+from mysql_script.db_connect import db
 from flask_bcrypt import Bcrypt
 import pymysql
 import datetime

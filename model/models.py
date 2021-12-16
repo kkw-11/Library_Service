@@ -1,4 +1,4 @@
-from db_connect import db
+from mysql_script.db_connect import db
 from datetime import datetime
 from sqlalchemy.orm import relationship
 
