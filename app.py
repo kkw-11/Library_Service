@@ -1,6 +1,6 @@
 from flask import Flask
 from api import bp
-from db_connect import db
+from mysql_script.db_connect import db
 
 app = Flask(__name__)
 app.register_blueprint(bp)

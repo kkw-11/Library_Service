@@ -138,6 +138,7 @@ def returnBook():
         db.session.add(borrowbook)
         db.session.commit()
         data = BorrowBook.query.filter((BorrowBook.email == login_email) & BorrowBook.return_date ==None).all()
+        
         flash("반납 성공!")
         return redirect("/returnBookList")
         return render_template("returnBook.html", book_list = data)
