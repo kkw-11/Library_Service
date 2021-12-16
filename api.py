@@ -1,6 +1,6 @@
 from flask import redirect, request, render_template, jsonify, Blueprint, session, g, flash,url_for
-from models import BorrowBook, User, Book,BookComment
-from db_connect import db
+from .model.models import BorrowBook, User, Book,BookComment
+from .mysql_script.db_connect import db
 from flask_bcrypt import Bcrypt
 import pymysql
 import datetime
@@ -138,7 +138,7 @@ def returnBook():
         db.session.add(borrowbook)
         db.session.commit()
         data = BorrowBook.query.filter((BorrowBook.email == login_email) & BorrowBook.return_date ==None).all()
-        
+
         flash("반납 성공!")
         return redirect("/returnBookList")
         return render_template("returnBook.html", book_list = data)
