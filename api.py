@@ -6,6 +6,7 @@ import pymysql
 import datetime
 import re
 
+
 bp = Blueprint('blueprint',__name__)
 bcrypt = Bcrypt()
 
