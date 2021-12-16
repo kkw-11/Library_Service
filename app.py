@@ -1,5 +1,5 @@
 from flask import Flask
-from api import bp
+from controller.api import bp
 from mysql_script.db_connect import db
 
 app = Flask(__name__)
