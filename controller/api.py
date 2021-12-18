@@ -162,7 +162,7 @@ def post():
     content = request.form['content']
     book_id = request.args.get("book")
     email = session.get('login')
-    data = Book.query.filter(Book.book_id == book_id).first()
+    book_data = Book.query.filter(Book.book_id == book_id).first()
 
     bookcomment = BookComment.query.filter(BookComment.book_id == int(book_id)).all()
     print(bookcomment)
@@ -175,7 +175,7 @@ def post():
         content = BookComment(int(book_id), email, content)
         db.session.add(content)
         db.session.commit()
-        return render_template("bookIDetail.html",book = data, bookcomment=bookcomment)
+        return render_template("bookIDetail.html",book = book_data, bookcomment=bookcomment)
 
 @bp.route("/borrowBookList")
 def borrowBookList():
