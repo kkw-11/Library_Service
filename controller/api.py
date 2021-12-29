@@ -152,10 +152,10 @@ def returnBook():
 def bookIDetail():
     book_id = request.args.get("name")
     print(type(book_id))
-    data = Book.query.filter(Book.book_id == book_id).first()
+    book_data = Book.query.filter(Book.book_id == book_id).first()
     bookcomment = BookComment.query.filter(BookComment.book_id == int(book_id)).all()
 
-    return render_template("bookIDetail.html",book = data,bookcomment=bookcomment)
+    return render_template("bookIDetail.html",book = book_data,bookcomment=bookcomment)
 
 @bp.route("/post", methods=["GET","POST"])
 def post():
