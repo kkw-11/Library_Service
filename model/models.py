@@ -18,14 +18,14 @@ class Book(db.Model):
     __tablename__ = 'book'
     book_id = db.Column(db.Integer,  primary_key=True,
                    nullable=False, autoincrement=True)
-    book_name = db.Column(db.String(256),nullable=False)
-    publisher = db.Column(db.String(256),nullable=False)
-    author = db.Column(db.String(256),nullable=False)
+    book_name = db.Column(db.String(255),nullable=False)
+    publisher = db.Column(db.String(255),nullable=False)
+    author = db.Column(db.String(255),nullable=False)
     publication_date = db.Column(db.Date, nullable = False)
-    pages = db.Column(db.String(256), nullable = False)
-    isbn = db.Column(db.String(256), nullable = False)
+    pages = db.Column(db.String(255), nullable = False)
+    isbn = db.Column(db.String(255), nullable = False)
     description = db.Column(db.Text)
-    link = db.Column(db.String(256))
+    link = db.Column(db.String(255))
     remaining = db.Column(db.Integer)
     rating = db.Column(db.Integer, default=5)
 
